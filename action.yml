@@ -1,0 +1,23 @@
+name: 'Get Apk Version'
+description: 'Get Apk Version'
+author: 'JantHsueh'
+branding:
+  icon: arrow-right-circle
+  color: gray-dark
+inputs:
+  apkPath:
+    description: 'apk path'
+    required: true
+    default: 'app/build/outputs/apk/release/app-release.apk'
+outputs:
+  versionCode:
+    description: 'apk versionCode'
+  versionNum:
+    description: 'apk versionNum'
+  applicationId:
+    description: 'apk applicationId'
+  name:
+    description: 'apk name'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
