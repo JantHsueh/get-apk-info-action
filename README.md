@@ -9,7 +9,7 @@
 ```yaml
   - name: Get Apk Info
     id: apk
-    uses: JantHsueh/get-apk-version-action@master
+    uses: JantHsueh/get-apk-info-action@1.0
     with:
      apkPath: app/build/outputs/apk/release/app-release.apk
 ```
